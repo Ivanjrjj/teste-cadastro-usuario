@@ -43,3 +43,12 @@ Criação de uma tabela `usuario` com os seguintes campos:
 - `email` (VARCHAR)
 - `senha` (TEXT)
 - `data_criacao` (TIMESTAMP)
+
+
+### Alterações realziadas :
+- Nome do arquivo html para "php" para utilização do php juntamente com o html.
+- Adicionado CSS para estilização web.
+- Adicionado Script.js para enviar os dados e solicitar os dados.
+- Adicionado Configuração do banco de dados XAMPP MYSQL
+- Adicionado funcionalidade para que o PHP codifique a senha no banco de dados para segurança do cliente(sha1)
+-

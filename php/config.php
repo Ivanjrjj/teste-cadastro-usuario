@@ -1,13 +1,9 @@
 <?php
-$host = 'localhost';
-$dbname = 'cadastro_usuarios';
-$user = 'seu_usuario';
-$password = 'sua_senha';
-
 try {
-    $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conexao = new PDO("mysql:host=localhost;port=3306;dbname=cadastrovox", "root", "");
+    $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die("Erro ao conectar com o banco de dados: " . $e->getMessage());
+    echo 'Erro na conexão: ' . $e->getMessage();
+    exit;
 }
 ?>
